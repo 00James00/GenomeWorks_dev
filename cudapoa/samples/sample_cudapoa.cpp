@@ -197,7 +197,13 @@ int main(int argc, char** argv)
     // Load input data. Each window is represented as a vector of strings. The sample
     // data has many such windows to process, hence the data is loaded into a vector
     // of vector of strings.
+
+
     std::vector<std::vector<std::string>> windows;
+    std::vector<std::string> input_paths = {"/home/bc526/GenomeWorks/build/cudapoa/samples/cuda/cudapoa_supplement/DRB1-3123.fa
+"};
+    parse_fasta_files(windows, input_paths, -1); // -1 to read all windows
+
 
     if (long_read)
     {
