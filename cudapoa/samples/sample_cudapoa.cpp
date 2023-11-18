@@ -200,9 +200,8 @@ int main(int argc, char** argv)
 
 
     std::vector<std::vector<std::string>> windows;
-    std::vector<std::string> input_paths = {"/home/bc526/GenomeWorks/build/cudapoa/samples/DRB1-3123.fa
-"};
-    parse_fasta_files(windows, input_paths, -1); // -1 to read all windows
+    std::vector<std::string> input_paths = {"/home/bc526/GenomeWorks/build/cudapoa/samples/DRB1-3123.fa"};
+    parse_fasta_files(windows, input_paths, -1);
 
 
     if (long_read)
